@@ -4,6 +4,7 @@
 }
 
 button {
-  font-family: "Gaegu";
-  font-size: 60px;
+  font-family: "Gaegu", monospace;
+  font-size: 20px;
+  color: red;
 }
