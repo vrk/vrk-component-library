@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Gaegu';
+  src: local('Gaegu'), url(../../assets/fonts/Gaegu-Regular.ttf) format('truetype');
+}
+
 button {
+  font-family: "Gaegu";
   font-size: 60px;
 }
