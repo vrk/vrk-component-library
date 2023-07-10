@@ -4,6 +4,8 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
 import image from "@rollup/plugin-image";
+import  url from "postcss-url";
+
 
 import packageJson from "./package.json" assert { type: "json" };
 
@@ -26,7 +28,13 @@ export default [
       resolve(),
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json"}),
-      postcss(),
+      postcss({
+        plugins: [
+          url({
+            url: 'inline'
+          })
+        ]
+      }),
       image()
      ]
   },
