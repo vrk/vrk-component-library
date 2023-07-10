@@ -12,6 +12,19 @@ type Story = StoryObj<typeof meta>;
 
 export const ImageSize: Story = {
   args: {
-    label: "dither style",
+    min: 1,
+    max: 100
+  },
+};
+
+export const Brightness: Story = {
+  args: {
+    icon: "brightness"
+  },
+};
+
+export const contrast: Story = {
+  args: {
+    icon: "contrast"
   },
 };

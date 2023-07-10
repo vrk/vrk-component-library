@@ -2,13 +2,21 @@ import React from "react";
 import styles from './Slider.module.css'; // Import css modules stylesheet as styles
 
 export interface SliderProps {
-  label: string;
+  icon?: "size"|"brightness"|"contrast";
+  min?: number;
+  max?: number;
+  initialValue?: number;
 }
 
 const Slider = ({
-  label,
+  icon = "size",
+  min = 0,
+  max = 100,
+  initialValue = 100
 }: SliderProps) => {
-  return <input type="range" className={styles.component} />
+  const className = `${styles.component} ${styles[icon]}`;
+  // TODO: Approach: Multiple classes that set the thumb image differently, toggle depending on parameter
+  return <input type="range" className={className} min={min} max={max} />
 }
 
 export default Slider;

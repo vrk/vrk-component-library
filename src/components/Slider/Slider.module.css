@@ -18,12 +18,26 @@ input[type=range].component::-webkit-slider-runnable-track {
 }
 
 input[type=range].component::-webkit-slider-thumb {
-  border: 2px solid #F27B7F;
   height: 36px;
   width: 36px;
   border-radius: 0px;
-  background: #FF96AB;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -14px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+input[type=range].component.size::-webkit-slider-thumb {
+  background-image: url(./size.png);
+}
+
+input[type=range].component.brightness::-webkit-slider-thumb {
+  background-image: url(./brightness.png);
+}
+
+input[type=range].component.contrast::-webkit-slider-thumb {
+  background-image: url(./contrast.png);
 }
