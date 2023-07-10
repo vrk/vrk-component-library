@@ -1,6 +1,5 @@
 import React from "react";
-// import styles from './Button.module.css'; // Import css modules stylesheet as styles
-import styles from '../../shared/BasicButton.module.css'; // Import css modules stylesheet as styles
+import styles from '../../shared/BasicButton.module.css'; 
 
 export interface ButtonProps {
   label: string;
