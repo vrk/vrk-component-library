@@ -43,9 +43,7 @@ const Button = ({
     background: colorSet.background,
     boxShadow: `0px -3px 0px 0px ${colorSet.insetBottom} inset, -2px 2px 0px 0px ${colorSet.insetTop} inset`
   }
-  return <div>
-    <button className={styles.button} style={style}>{label}</button>
-  </div>
+  return <button className={styles.button} style={style}>{label}</button>
 }
 
 export default Button;
