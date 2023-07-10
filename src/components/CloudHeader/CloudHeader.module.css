@@ -6,6 +6,7 @@
 }
 
 .component {
+  color: black;
   font-family: "Gaegu", monospace;
   font-size: 28px;
   font-weight: 400;
