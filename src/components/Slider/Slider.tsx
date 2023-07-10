@@ -15,7 +15,6 @@ const Slider = ({
   initialValue = 100
 }: SliderProps) => {
   const className = `${styles.component} ${styles[icon]}`;
-  // TODO: Approach: Multiple classes that set the thumb image differently, toggle depending on parameter
   return <input type="range" className={className} min={min} max={max} defaultValue={initialValue} />
 }
 
