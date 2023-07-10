@@ -10,14 +10,33 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const HelloWorld: Story = {
+export const BasicYellowButton: Story = {
   args: {
-    label: 'hello world',
+    label: 'click me!',
   },
 };
 
-export const ClickMe: Story = {
+export const SmallYellowButton: Story = {
   args: {
-    label: 'Click me!',
+    label: 'more',
+    leftRightPadding: 5,
+    topBottomPadding: 0
+  },
+};
+
+export const BasicPinkButton: Story = {
+  args: {
+    label: 'print',
+    color: 'pink'
+  },
+};
+
+export const BigPinkButton: Story = {
+  args: {
+    label: 'PRINT!',
+    color: 'pink',
+    fontSize: 36,
+    leftRightPadding: 60,
+    topBottomPadding: 15
   },
 };
