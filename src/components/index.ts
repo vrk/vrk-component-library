@@ -4,5 +4,6 @@ export { default as DitherButton } from './DitherButton';
 export { default as PaperIcon } from './PaperIcon';
 export { default as Printer } from './Printer';
 export { default as RadioButton } from './RadioButton';
+export { default as Select } from './Select';
 export { default as Slider } from './Slider';
 export { default as Toggle } from './Toggle';
