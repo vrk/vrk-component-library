@@ -1,6 +1,6 @@
 {
   "name": "@vrk/vrk-component-library",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "my react component library",
   "scripts": {
     "rollup": "rollup -c",
