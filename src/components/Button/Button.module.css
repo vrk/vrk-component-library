@@ -8,5 +8,6 @@
 .button {
   font-family: "Gaegu", monospace;
   border-radius: 5px;
+  -webkit-font-smoothing: antialiased;
 }
 
