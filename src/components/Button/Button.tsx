@@ -1,5 +1,5 @@
 import React from "react";
-import "./Button.css";
+import styles from './Button.module.css'; // Import css modules stylesheet as styles
 import logo from '../../assets/images/bento.png';
 
 export interface ButtonProps {
@@ -8,7 +8,7 @@ export interface ButtonProps {
 
 const Button = (props: ButtonProps) => {
   return <div>
-    <button className="Button">{props.label}</button>
+    <button className={styles.button}>{props.label}</button>
     <img src={logo}/>
   </div>
 }
