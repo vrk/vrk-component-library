@@ -1,8 +1,13 @@
+.component {
+  display: inline;
+}
+
 .component [type=checkbox] {
   height: 0;
   width: 0;
   visibility: hidden;
   appearance: none;
+  display: none;
 }
 
 .component label {
