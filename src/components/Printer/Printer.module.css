@@ -4,8 +4,7 @@
 }
 
 .component .paperContainer {
-  position: absolute;
-  top: 43px;
+  margin-top: -135px;
   display: flex;
   align-items: center;
   justify-content: center;
